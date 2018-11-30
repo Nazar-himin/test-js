@@ -48,7 +48,18 @@ function prn(val) {
 //     num = parseFloat(prompt('Enter a number'));
 // }
 
-let num;
-do {
-    num = parseFloat(prompt('Enter a number'));
-} while(Number.isNaN(num));
+// let num;
+// do {
+//     num = parseFloat(prompt('Enter a number'));
+// } while(Number.isNaN(num));
+
+let products = [];
+products[0] = 'Tesla model X';
+products[1] = 'Ferrari f30';
+products[2] = 'Porshe 2';
+// prn(products[1]);
+products.push('Chevrole Malibu');
+products.push('Chevrole Camaro');
+prn(products.length);
+products[100] = 'Zaz Sens';
+prn(products.length);
